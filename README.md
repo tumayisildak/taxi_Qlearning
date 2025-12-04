@@ -1,4 +1,4 @@
-# 🚖 Custom Taxi Environment - Q-Learning Projesi
+# Custom Taxi Environment - Q-Learning Projesi
 
 Pekiştirmeli öğrenme (Reinforcement Learning) ile otonom taksi simülasyonu. Taksi, Q-Learning algoritması kullanarak yolcuları herhangi bir hücreden alıp herhangi bir hücreye bırakmayı öğrenir.
 
@@ -6,7 +6,7 @@ Pekiştirmeli öğrenme (Reinforcement Learning) ile otonom taksi simülasyonu. 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Pygame](https://img.shields.io/badge/pygame-2.0+-red.svg)
 
-## 🎯 Özellikler
+## Özellikler
 
 - ✅ **Her hücreden yolcu al/bırak** - Tüm grid kullanılabilir
 - ✅ **6×6 grid ortamı** - ULTRA BASİT (2 engel, 3 duvar)  
@@ -16,30 +16,30 @@ Pekiştirmeli öğrenme (Reinforcement Learning) ile otonom taksi simülasyonu. 
 - ✅ **Taksi pozisyon koruma** - Yolcu bıraktıktan sonra aynı yerde kalır ⭐
 - ✅ **Sürekli yolcu üretimi** - Sonsuz görev modu
 
-## 📦 Kurulum
+## Kurulum
 
 ```bash
 pip install numpy gym pygame
 ```
 
-## 🚀 Hızlı Başlangıç (3 Adım)
+## Hızlı Başlangıç (3 Adım)
 
-### 1️⃣ Test Et
+### Test Et
 \`\`\`bash
 python test_env.py
 \`\`\`
 
-### 2️⃣ Eğit (20-30 dakika)
+### Eğit (20-30 dakika)
 \`\`\`bash
 python train_qtable.py
 \`\`\`
 
-### 3️⃣ Çalıştır
+### Çalıştır
 \`\`\`bash
 python run_taxi.py
 \`\`\`
 
-## 🎮 Ortam Detayları
+## Ortam Detayları
 
 ### Grid Yapısı (v2.2 - ULTRA BASİT)
 - **Boyut**: 6×6 (36 hücre)
@@ -59,7 +59,7 @@ python run_taxi.py
 | Başarılı pickup | +50 |
 | Başarılı dropoff | +200 |
 
-## 🧠 Q-Learning
+## Q-Learning
 
 ### Hiperparametreler
 - Episodes: 100,000
@@ -72,28 +72,28 @@ python run_taxi.py
 - **Adım**: 10-18
 - **Ödül**: +80...+120
 
-## 🎨 Görselleştirme
+## Görselleştirme
 
-- **Sarı Kare**: Taksi 🚖
-- **Mavi (P)**: Yolcu 👤
-- **Yeşil (D)**: Hedef 🎯
-- **Kırmızı**: Engel ⛔
-- **Gri Çizgi**: Duvar 🧱
+- **Sarı Kare**: Taksi 
+- **Mavi (P)**: Yolcu 
+- **Yeşil (D)**: Hedef 
+- **Kırmızı**: Engel 
+- **Gri Çizgi**: Duvar 
 
-## 💡 Önemli Özellik: Taksi Pozisyon Koruma
+## Önemli Özellik: Taksi Pozisyon Koruma
 
 Yolcu bıraktıktan sonra taksi **aynı yerde kalır**, sadece yeni yolcu üretilir:
 
 \`\`\`
-🚖 Görev #1 başladı
+ Görev #1 başladı
    ✓ Görev tamamlandı!
    ⟳ Yeni yolcu üretiliyor (taksi aynı yerde)...
 
-🚖 Görev #2 başladı
+ Görev #2 başladı
    (Taksi önceki konumda devam eder)
 \`\`\`
 
-## 🔧 Özelleştirme
+## Özelleştirme
 
 ### Ortam
 \`\`\`python
@@ -115,7 +115,7 @@ reward = 80   # pickup
 reward = 300  # dropoff
 \`\`\`
 
-## 🐛 Sorun Giderme
+## Sorun Giderme
 
 ### Pygame açılmıyor
 \`\`\`bash
@@ -132,7 +132,7 @@ python train_qtable.py
 2. Ödülleri artır
 3. Engelleri azalt
 
-## 📁 Dosyalar
+## Dosyalar
 
 - \`custom_taxi_env.py\` - Ana ortam
 - \`train_qtable.py\` - Eğitim
@@ -140,7 +140,7 @@ python train_qtable.py
 - \`test_env.py\` - Test
 - \`q_table.npy\` - Eğitilmiş model
 
-## 📊 Grid Haritası
+## Grid Haritası
 
 \`\`\`
   0   1   2   3   4   5
@@ -163,12 +163,12 @@ X = Engel (2)
 Grid %90 açık!
 \`\`\`
 
-## 🎓 Öğrenme Kaynakları
+## Öğrenme Kaynakları
 
 - [Sutton & Barto - RL Kitabı](http://incompleteideas.net/book/the-book-2nd.html)
 - [OpenAI Spinning Up](https://spinningup.openai.com/)
 
-## 📋 Hızlı Referans
+## Hızlı Referans
 
 \`\`\`bash
 python test_env.py       # Test
@@ -177,12 +177,4 @@ python run_taxi.py       # Çalıştır
 rm q_table*.npy          # Temizle
 \`\`\`
 
-## 📜 Lisans
 
-MIT License - Eğitim amaçlı, özgürce kullanılabilir.
-
----
-
-**⭐ Beğendiyseniz yıldız verin!**
-
-**Made with ❤️ and 🤖**
